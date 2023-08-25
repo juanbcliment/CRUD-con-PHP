@@ -1,0 +1,66 @@
+.agregar {
+    font-size: 20px;
+    padding: 2px 5px;
+    background-color: rgb(13, 174, 13);
+    color: white;
+    margin-left: 80px;
+}
+
+a {
+    margin: 1px 2px;
+}
+
+.link {
+    text-align: center;
+}
+
+.linkNombres {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    font-size: 20px;
+}
+
+.h2-header {
+    text-decoration: none;
+    color: beige;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+
+}
+
+.div-header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    background-color: rgb(31, 29, 29);
+
+
+}
+
+.h2-alinear {
+    margin-left: 80px;
+}
+
+body {
+    background-color: beige;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.color {
+    background-color: beige;
+}
+
+.ajustar {
+
+    margin-left: 30%;
+    width: 600px;
+    text-align: center;
+}
