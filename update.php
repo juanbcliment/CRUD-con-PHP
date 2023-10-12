@@ -29,13 +29,12 @@
   }
 
   if (isset($_POST['update'])) {
-    $id = $_GET['id_mov'];
-    $id_familia = $_POST["id_familia"];
-    $tipo = $_POST["tipo"];
-    $monto = $_POST["monto"];
-    $forma_de_pago = $_POST["forma_de_pago"];
-    $fecha = $_POST["fecha"];
-    $descripcion = $_POST["descripcion"];
+    $id_familia = $conexion->real_escape_string($_POST["id_familia"]);
+    $tipo = $conexion->real_escape_string($_POST["tipo"]);
+    $monto = $conexion->real_escape_string($_POST["monto"]);
+    $forma_de_pago = $conexion->real_escape_string($_POST["forma_de_pago"]);
+    $fecha = $conexion->real_escape_string($_POST["fecha"]);
+    $descripcion = $conexion->real_escape_string($_POST["descripcion"]);
 
     $query = "UPDATE movimientos SET fecha = '$fecha', tipo ='$tipo', descripcion = '$descripcion', monto ='$monto', forma_de_pago = '$forma_de_pago', id_familia = '$id_familia'
   WHERE id_mov = $id";
